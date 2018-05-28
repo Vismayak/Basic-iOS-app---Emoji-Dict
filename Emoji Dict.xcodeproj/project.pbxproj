@@ -12,6 +12,7 @@
 		3AE5A83220BB58600006305C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5A83020BB58600006305C /* Main.storyboard */; };
 		3AE5A83420BB58610006305C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5A83320BB58610006305C /* Assets.xcassets */; };
 		3AE5A83720BB58610006305C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE5A83520BB58610006305C /* LaunchScreen.storyboard */; };
+		3AE5A83F20BB87330006305C /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE5A83E20BB87330006305C /* EmojiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3AE5A83320BB58610006305C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AE5A83620BB58610006305C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AE5A83820BB58610006305C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AE5A83E20BB87330006305C /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3AE5A82C20BB58600006305C /* AppDelegate.swift */,
 				3AE5A82E20BB58600006305C /* ViewController.swift */,
+				3AE5A83E20BB87330006305C /* EmojiViewController.swift */,
 				3AE5A83020BB58600006305C /* Main.storyboard */,
 				3AE5A83320BB58610006305C /* Assets.xcassets */,
 				3AE5A83520BB58610006305C /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE5A83F20BB87330006305C /* EmojiViewController.swift in Sources */,
 				3AE5A82F20BB58600006305C /* ViewController.swift in Sources */,
 				3AE5A82D20BB58600006305C /* AppDelegate.swift in Sources */,
 			);

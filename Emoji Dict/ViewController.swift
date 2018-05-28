@@ -24,6 +24,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return emojis.count
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = UITableViewCell() // creating a generic table view cell
@@ -36,6 +37,21 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let emoji = emojis[indexPath.row]
+        performSegue(withIdentifier: "moveSegue", sender: emoji)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let defVC = segue.destination as! EmojiViewController
+        defVC.emoji = sender as! String
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
