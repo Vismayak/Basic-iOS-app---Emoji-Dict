@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var MainTableView: UITableView!
+    
+    var emojis = [ "😀","😎","😂","😓","🤫","💩","⚽️"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,13 +21,13 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         MainTableView.delegate = self;
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return emojis.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = UITableViewCell() // creating a generic table view cell
-        cell.textLabel?.text = "Test"; 
+        cell.textLabel?.text = emojis[indexPath.row];
         // "“When working with optional values, you can write ? before
         //operations like methods, properties, and subscripting. If the value before the ? is nil,
         //everything after the ? is ignored and the value of the whole expression is nil. Otherwise, the
